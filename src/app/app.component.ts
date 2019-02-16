@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DemoService } from './demo.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-demo';
+  title = 'bye bye world';
+  constructor(private service: DemoService) {
+    service.getHelloWorld().subscribe((text: string) => {
+      this.title = text;
+    });
+  }
 }
