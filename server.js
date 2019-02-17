@@ -1,7 +1,7 @@
 var express = require('express');
 var compression = require('compression');
 var proxy = require('http-proxy-middleware');
-var API_HOST = process.env.API_HOST;
+var API_HOST = process.env.API_HOST || 'localhost:8080';
 var PORT = process.env.SERVER_PORT || 8080
 
 var buildPath = 'dist/angular-demo'
