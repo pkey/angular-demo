@@ -6,10 +6,7 @@ branches:
   only:
   - master
 
-before_script:
-  - yarn add @angular/cli
-
 script:
-- ng lint
-- ng test --watch=false --browsers=ChromeHeadless
-- ng build --prod
+- yarn lint
+- yarn test --watch=false --browsers=ChromeHeadless
+- yarn build --prod
