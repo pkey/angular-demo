@@ -8,7 +8,7 @@ The project was generated with [Angular CLI](https://github.com/angular/angular-
 
 ## Production server
 
-When in production, application can be launched via `yarn start`.
+When in production, application can be launched via `yarn start`. It will use the `server.js` to launch a standalone server to handle proxying and static file serving.
 
 ### Environment variables
 
