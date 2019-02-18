@@ -1,10 +1,16 @@
-# AngularDemo
+# Angular and Heroku/TravisCI demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+## Intro
+
+This project was created to show best practises of running a development/testing/deployment pipeline of Angular application using Heroku and Travis CI. Part of Swedbank IT Academy 2019.
+
+The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --proxy-config proxy.conf.json` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+The file `proxy.conf.json` should be the same as `proxy.conf.example.json` but contain URL to your backend.
 
 ## Code scaffolding
 
