@@ -1,5 +1,7 @@
 # Angular and Heroku/TravisCI demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pkey/angular-demo.svg)](https://greenkeeper.io/)
+
 ## Intro
 
 This project was created to show best practises of running a development/testing/deployment pipeline of Angular application using Heroku and Travis CI. Part of Swedbank IT Academy 2019.
